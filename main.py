@@ -6,6 +6,14 @@ Contains highest level functions for optimising repeater protocols.
 All these functions use the optimise_schemes functions from connection_and_distillation.py.
 """
 
+# import collections 
+# import sys
+# if sys.version_info.major == 3 and sys.version_info.minor >= 10:
+
+#     from collections.abc import MutableMapping
+# else:
+#     from collections import MutableMapping
+
 from plot_functions import *
 from global_file import create_params_dict
 from connection_and_distillation import *
@@ -59,6 +67,6 @@ def optimise_repeater_with_parameters_from_file(filename, save=False):
 
 if __name__ == "__main__":
     filename = 'MP_params_set4_3_repeater_200km'
-    optimise_repeater_with_parameters_from_file(filename=filename)
+    optimise_repeater_with_parameters_from_file(filename=filename,save=True)
 
     plt.show()
