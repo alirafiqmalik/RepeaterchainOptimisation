@@ -1,0 +1,75 @@
+## Multi Path network parameters
+n = 10  # Number of repeaters
+distance = 800  # Total distance, you may adjust this value
+
+simulation_type = "MP"  # Sets the system to be analyzed, can be "IP" or "MP".
+MP_to_IP = False  # Sets how elementary link generation is done.
+
+## System parameters
+distillation_rounds = 0  # Number of times distillation is considered
+Latt = 22  # Attenuation length
+c = 207110.19  # Speed of light
+
+# Detectors and losses in devices
+dark_counts = 10  # Average number of dark counts in detectors
+integration_time = 30e-9  # Integration time of the detectors, time-window for which photons are detected
+pps = 0.999  # Photon probability success
+pdet = 0.999  # Detector efficiency
+pem = 0.999  # Memory efficiency
+
+T1 = 1e1
+T2 = 1e1
+T3 = 0
+T4 = 0
+Tamp = 9e9  # Tamp is currently not used in the error models.
+
+number_of_fibres = 1e7  # Number of modes in between nodes for repeater chain
+initial_prep_time = 6e-6
+T_prep = 6e-6
+distillation_time = 6e-6
+bell_swap_time = 6e-6
+
+F_g = 0.98
+F_prep = 0.99
+
+bsm_deph = 1
+bell_swap_time = 6e-6
+meas_deph = 1
+
+photon_to_memory_depol = 0.998
+photon_to_memory_deph = 0.998
+bsm_prob = 0.9375
+
+phase_uncertainty = 14.3
+
+## Multi Path specific parameters
+# Add parameters specific to a Multi Path scenario here
+
+# Simulation parameters
+total_pruning = False
+general_distillation = True
+symmetricoptimisation = False
+multi_threading = False
+
+threshold_fidelity = 0.5  # Lowest fidelity that will be allowed to be stored
+
+min_ELG_prob = 0.9  # Minimum success probability required for elementary link generation
+max_ELG_prob = 0.999  # Maximum success probability required for elementary link generation
+
+min_global_prob = 0.9  # Minimum success probability required for all other protocols besides elementary link generation
+max_global_prob = 0.999  # Maximum success probability required for all other protocols besides elementary link generation
+
+epsilon_f = 0.01  # Coarse-graining parameter for the fidelity
+epsilon_p = 0.02  # Coarse-graining parameter for the success probability
+
+eps_dist = 0.05  # Heuristics parameter for banded distillation
+eps_swap = 0.05  # Heuristics parameter for banded swapping
+
+true_deterministic_delivery = False
+worst_case = False
+
+seq_distillation = True
+
+uniform_sim = True
+
+pert = 0  # Adds additional randomness to the placement of nodes. Default = 0

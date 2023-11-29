@@ -1,7 +1,8 @@
 import unittest
-from ..connection_and_distillation import get_bipartitions, iterate_over_paths_of_length_k
-from ..network_functions import create_repeater_chain, find_candidate_paths
-from ..scheme_class import Scheme
+from connection_and_distillation import get_bipartitions, iterate_over_paths_of_length_k,iterate_over_schemes_of_subpaths,iterate_distillation_subschemes
+from network_functions import create_repeater_chain, find_candidate_paths
+from scheme_class import Scheme
+from scheme_class import add_schemes
 assertions = unittest.TestCase('__init__')
 
 

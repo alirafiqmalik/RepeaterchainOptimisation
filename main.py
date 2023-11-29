@@ -13,13 +13,21 @@ All these functions use the optimise_schemes functions from connection_and_disti
 #     from collections.abc import MutableMapping
 # else:
 #     from collections import MutableMapping
-
 from plot_functions import *
 from global_file import create_params_dict
 from connection_and_distillation import *
 import time
 from itertools import product
 import warnings
+
+# import matplotlib.pyplot as plt
+
+# plt.rcParams.update({
+#     "text.usetex": True,
+#     "text.latex.preamble": r"\usepackage{dvipng}",  # Add additional packages if needed
+# })
+
+
 warnings.filterwarnings("error")
 warnings.filterwarnings(
     "ignore", message="elementwise comparison failed; returning scalar instead, "
@@ -60,8 +68,15 @@ def optimise_repeater_with_parameters_from_file(filename, save=False):
         with open('pkl_files/' + filename + '.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
             pickle.dump(path_dict, f)
 
-    plot_fidelity_vs_time_plot(G, 'A', 'B', label=filename,
-                               color=None, connected=True)
+    # plot_fidelity_vs_time_plot(G, 'A', 'B', label=filename,
+    #                            color=None, connected=True)
+    
+
+    # print(G.nodes)
+    pos = nx.spring_layout(G, k=0.9, seed=42)  # Adjust the value of k # Set a seed value for reproducibility
+    edges = G.edges()
+    # scheme1 = Scheme(('A'), None, None, None, [0.9, 0, 0, 0.1], 1, 1)
+    # generate_pdf_of_scheme_graph(scheme, "A", general_distillation=False)
     return G
 
 
