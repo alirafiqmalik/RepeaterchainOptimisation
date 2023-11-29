@@ -80,7 +80,7 @@ def clear_schemes(path=None):
             path_dict.pop(key)
 
 
-class Schemes(collections.MutableMapping):
+class Schemes(collections.abc.MutableMapping):
     """A dictionary that checks whether the key first exists,
         then adds it if it does not exist. If it exists,
         it checks whether the saved value has a lower time than

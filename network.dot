@@ -1,19 +1,785 @@
 strict graph "" {
-	A	[pos="[0 0]"];
-	R1	[pos="[ 0.         -0.33333333]"];
-	A -- R1;
-	R2	[pos="[ 0.         -0.66666667]"];
-	A -- R2;
-	R3	[pos="[ 0. -1.]"];
-	A -- R3;
-	R4	[pos="[ 0.         -1.33333333]"];
-	A -- R4;
-	R5	[pos="[ 0.         -1.66666667]"];
-	A -- R5;
-	B	[pos="[0 2]"];
-	B -- R1;
-	B -- R2;
-	B -- R3;
-	B -- R4;
-	B -- R5;
+	0	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=T,
+		uniform_sim=True,
+		worst_case=False];
+	A	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=T,
+		uniform_sim=True,
+		worst_case=False];
+	0 -- A	[customer=none,
+		type=peer];
+	2	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=T,
+		uniform_sim=True,
+		worst_case=False];
+	0 -- 2	[customer=none,
+		type=peer];
+	3	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=T,
+		uniform_sim=True,
+		worst_case=False];
+	0 -- 3	[customer=none,
+		type=peer];
+	4	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=T,
+		uniform_sim=True,
+		worst_case=False];
+	0 -- 4	[customer=none,
+		type=peer];
+	5	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		peers=1,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=M,
+		uniform_sim=True,
+		worst_case=False];
+	0 -- 5	[customer=5,
+		type=transit];
+	6	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		peers=1,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=M,
+		uniform_sim=True,
+		worst_case=False];
+	0 -- 6	[customer=6,
+		type=transit];
+	9	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		peers=0,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=C,
+		uniform_sim=True,
+		worst_case=False];
+	0 -- 9	[customer=9,
+		type=transit];
+	A -- 2	[customer=none,
+		type=peer];
+	A -- 3	[customer=none,
+		type=peer];
+	A -- 4	[customer=none,
+		type=peer];
+	2 -- 3	[customer=none,
+		type=peer];
+	2 -- 4	[customer=none,
+		type=peer];
+	3 -- 4	[customer=none,
+		type=peer];
+	3 -- 5	[customer=5,
+		type=transit];
+	3 -- 6	[customer=6,
+		type=transit];
+	4 -- 5	[customer=5,
+		type=transit];
+	5 -- 6	[customer=none,
+		type=peer];
+	8	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		peers=0,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=C,
+		uniform_sim=True,
+		worst_case=False];
+	5 -- 8	[customer=8,
+		type=transit];
+	B	[CNOT_depol=0.98,
+		F_g=0.98,
+		F_prep=0.99,
+		Fm=0.98,
+		Latt=22,
+		MP_to_IP=False,
+		T1=0.1,
+		T2=0.1,
+		T3=0,
+		T4=0,
+		T_prep="6e-06",
+		Tamp=9000000000,
+		bell_swap_time="6e-06",
+		bsm_deph=1,
+		bsm_depol=0.98,
+		bsm_prob=0.75,
+		c=207110.19,
+		dark_counts=10,
+		distance=150,
+		distillation_rounds=0,
+		distillation_time="6e-06",
+		eps_dist=0.05,
+		eps_swap=0.05,
+		epsilon_f=0.01,
+		epsilon_p=0.02,
+		general_distillation=True,
+		initial_prep_time="6e-06",
+		integration_time="3e-08",
+		max_ELG_prob=0.999,
+		max_global_prob=0.999,
+		meas_deph=1,
+		meas_depol=0.98,
+		min_ELG_prob=0.9,
+		min_global_prob=0.9,
+		multi_threading=False,
+		n=1,
+		number_of_fibres=100000,
+		opu_noise=0.9841678750368037,
+		pdet=0.95,
+		peers=0,
+		pem=0.95,
+		pert=0,
+		phase_uncertainty=14.3,
+		photon_to_memory_deph=0.998,
+		photon_to_memory_depol=0.998,
+		pps=0.95,
+		seq_distillation=True,
+		simulation_type=MP,
+		state_prep="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		symmetricoptimisation=False,
+		target_state="Quantum object: dims = [[9, 9], [9, 9]], shape = (81, 81), type = oper, isherm = True
+Qobj data =
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. \
+0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]",
+		threshold_fidelity=0.5,
+		total_pruning=False,
+		true_deterministic_delivery=False,
+		type=C,
+		uniform_sim=True,
+		worst_case=False];
+	6 -- B	[customer=7,
+		type=transit];
 }
